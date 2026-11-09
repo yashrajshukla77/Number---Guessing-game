@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p3.css">
+    <title>Number-Guessing Game!</title>
+</head>
+<body>
+    <nav>
+        <h1>Project-3: Number-Guessing Game!</h1>
+        <a target="_blank" href="../index.html">Previous</a>
+        <a target="_blank" href="../../project 2/index.html">Home</a>
+        <a target="_blank" href="https://www.w3schools.com/html/">HTML</a>
+        <a target="_blank" href="https://www.w3schools.com/css/">CSS</a>
+        <a target="_blank" href="https://www.w3schools.com/js/">JavaScript</a>
+    </nav>
+    <hr>
+    <div class="container">
+        <h1 class ="game" text align ="center"><u>Number-Guessing Game!</u></h1>
+        <h3 class ="paragraph" text align ="center">📣Guess the number between 1 and 100!</h3>
+        <h3 class="paragraph" text align ="center">You have 10 attempts to guess the correct number.</h3>
+        <form id="game-form">
+            <label for="guess-input">Your guess</label>
+            <input type="number" id="guess-input" placeholder="Enter your guess" min="1" max="100" required>
+            <button class="game-button" id="guess-button" type="submit">Guess</button>
+            <button class="game-button" id="new-game-button" type="button">New Game</button>
+             </form>
+             <div class ="result">
+            <p id="previous-guesses">Previous guesses:<span class ="guesses"> </span> </p>
+            <p id="remaining-attempts">Remaining attempts: 10</p>
+            <p class ="indicator"></p>
+        </div>
+    </div>
+</body>
+<script src="p3.js"></script>
+</html>
